@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get Artifacts
-        uses: actions/download-atifcat@v3
+        uses: actions/download-artifact@v3
         with: 
           name: dist files
       - name: Get code
