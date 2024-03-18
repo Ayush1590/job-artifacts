@@ -25,6 +25,10 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
+      - name: Get Artifacts
+        uses: actions/download-atifcat@v3
+        with: 
+          name: dist files
       - name: Get code
         uses: actions/checkout@v3
       - name: Install dependencies
